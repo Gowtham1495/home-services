@@ -1,0 +1,67 @@
+{
+    "data": {
+        "serviceList": [
+            {
+                "serviceId": 1,
+                "serviceName": "AC mechanic",
+                "image":"assets/app/air-conditioner.png",
+                "tagline":"Air Conditioner Service"
+            },
+            {
+                "serviceID": 2,
+                "serviceName": "Carpenters",
+                "image":"assets/app/carpenter.png",
+                "tagline":"Wooden works and service"
+            },
+            {
+                "serviceID": 3,
+                "serviceName": "Electricians",
+                "image":"assets/app/electrician.png",
+                "tagline":"Certified Electricians at your Doorstep"
+            },
+            {
+                "serviceID": 4,
+                "serviceName": "Pest Control",
+                "image":"assets/app/pesticide.png",
+                "tagline":"Cockroaches, Lizards and other pests"
+            },
+            {
+                "serviceID": 5,
+                "serviceName": "Painters",
+                "image":"assets/app/paint-roller.png",
+                "tagline":"Professional Painting services"
+            },
+            {
+                "serviceID": 6,
+                "serviceName": "Plumbers",
+                "image":"assets/app/water-pipe.png",
+                "tagline":"Professional Plumbers"
+            },
+            {
+                "serviceID": 7,
+                "serviceName": "Appliance Repair",
+                "image":"assets/app/appliance.png",
+                "tagline":"Tv, Washing Machine, Fridge"
+            },
+            {
+                "serviceID": 8,
+                "serviceName": "Salon At Home",
+                "image":"assets/app/salon.png",
+                "tagline":"Hair Cut, Pedicure and more"
+            },
+            {
+                "serviceID": 10,
+                "serviceName": "Car Mechanic",
+                "image":"assets/app/car-repair.png",
+                "tagline":"Professional Car Mechanics"
+            },
+            {
+                "serviceID": 11,
+                "serviceName": "Baby care",
+                "image":"assets/app/baby.png",
+                "tagline":"Your Baby in Safe Hands"
+            }
+        ]
+    },
+    "status_code": 200
+}

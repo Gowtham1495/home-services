@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatSidenavModule} from '@angular/material/sidenav';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HsHeaderComponent } from './hs-header/hs-header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
+import { HsHeaderComponent } from './components/hs-header/hs-header.component';
 import { HsMaterialModule } from './material-module';
-import { HomeComponent } from './home/home.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { HsFooterComponent } from './hs-footer/hs-footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { HsFooterComponent } from './components/hs-footer/hs-footer.component';
+
 
 @NgModule({
-  declarations: [			
+  declarations: [
     AppComponent,
       HsHeaderComponent,
       HomeComponent,
@@ -20,6 +22,7 @@ import { HsFooterComponent } from './hs-footer/hs-footer.component';
    ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HsMaterialModule
