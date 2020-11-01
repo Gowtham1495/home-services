@@ -2,3 +2,19 @@
   width: 96px;
   height: 96px;
 }
+
+.center-button {
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color:#b3b3b3;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}

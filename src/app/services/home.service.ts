@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class HomeService {
 
-homeServicesUrl = 'assets/services.json';
+homeServicesUrl = 'assets/mocks/services.json';
 constructor(private http: HttpClient) { }
 
 getHomeServices(): any {

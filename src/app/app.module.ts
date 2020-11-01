@@ -1,3 +1,4 @@
+import { ServiceProviderComponent } from './components/service-provider/service-provider.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,7 +19,8 @@ import { HsFooterComponent } from './components/hs-footer/hs-footer.component';
       HsHeaderComponent,
       HomeComponent,
       SidenavComponent,
-      HsFooterComponent
+      HsFooterComponent,
+      ServiceProviderComponent
    ],
   imports: [
     BrowserModule,

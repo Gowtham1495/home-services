@@ -2,6 +2,7 @@ import { IHomeServiceList } from './../../interfaces/IHomeServiceList';
 import { HomeService } from './../../services/home.service';
 import { Component, OnInit } from '@angular/core';
 import { IHomeService } from '../../interfaces/IHomeService';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,7 @@ export class HomeComponent implements OnInit {
   servicesList: Array<IHomeService>;
   headers: Map<string, string>;
 
-  constructor(private homeService: HomeService) { }
+  constructor(private homeService: HomeService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.homeService.getHomeServices().subscribe(resp => {
@@ -32,6 +33,11 @@ export class HomeComponent implements OnInit {
       console.log('this.servicesList', this.servicesList);
     });
 
+  }
+
+  routeToServiceProvider(sid: number): void {
+    console.log('routing', sid);
+    this.router.navigate(['/serviceProviders'], { queryParams: { serviceId: sid } });
   }
 
 }

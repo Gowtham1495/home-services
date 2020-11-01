@@ -1,0 +1,46 @@
+{
+    "data": {
+        "serviceProviders": [
+            {
+                "age": 16,
+                "empID": "KK21/63272277",
+                "image":"assets/profile/williamson.jpeg",
+                "image_name": "KK21_63272277.png",
+                "phoneNumber": "9488086551",
+                "rating": "4.3",
+                "serviceProviderCost": "100/hour",
+                "serviceProviderExp": "1 years",
+                "serviceProviderID": 277,
+                "serviceProviderName": "Williamson"
+            },
+            {
+                "age": 16,
+                "empID": "KK21/30538317",
+                "image":"assets/profile/ayushman.png",
+                "image_name": "KK21_30538317.png",
+                "isUserContacted": 0,
+                "phoneNumber": "9894553664",
+                "rating": "0.0",
+                "serviceProviderCost": "Cleaning ₹1500\nService ₹2000",
+                "serviceProviderExp": "2 years",
+                "serviceProviderID": 317,
+                "serviceProviderName": "Ayushman"
+            },
+            {
+                "age": 16,
+                "empID": "KK21/30538317",
+                "image":"assets/profile/chadwick.jpeg",
+                "image_name": "KK21_30538317.png",
+                "isUserContacted": 0,
+                "phoneNumber": "9894553664",
+                "rating": "0.0",
+                "serviceProviderCost": "Cleaning ₹1500\nService ₹2000",
+                "serviceProviderExp": "2 years",
+                "serviceProviderID": 317,
+                "serviceProviderName": "Chadwick"
+            }
+        ]
+    },
+    "data_count": 2,
+    "status_code": 200
+}

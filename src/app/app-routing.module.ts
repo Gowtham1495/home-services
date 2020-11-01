@@ -1,3 +1,4 @@
+import { ServiceProviderComponent } from './components/service-provider/service-provider.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -8,6 +9,10 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'serviceProviders',
+    component: ServiceProviderComponent
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -16,7 +21,7 @@ const routes: Routes = [
     path: '**',
     redirectTo: '/home',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({

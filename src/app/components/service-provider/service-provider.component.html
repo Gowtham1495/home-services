@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="column" *ngFor="let serviceProvider of serviceProviders">
+      <div class="card">
+        <img src={{serviceProvider.image}} class="img-thumbnail" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>{{serviceProvider.serviceProviderName}}</h2>
+          <p class="title">Experience: {{serviceProvider.serviceProviderExp}}</p>
+          <p>Cost: {{serviceProvider.serviceProviderCost}}</p>
+          <p>Contact: {{serviceProvider.phoneNumber}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
