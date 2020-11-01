@@ -1,15 +1,15 @@
-import { IHomeServiceList } from './../../interfaces/IHomeServiceList';
-import { HomeService } from './../../services/home.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { HomeService } from '../../services/home.service';
+import { IHomeServiceList } from '../../interfaces/IHomeServiceList';
 import { Component, OnInit } from '@angular/core';
 import { IHomeService } from '../../interfaces/IHomeService';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-home-service',
+  templateUrl: './home-service.component.html',
+  styleUrls: ['./home-service.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeServiceComponent implements OnInit {
 
   homeServices: IHomeServiceList;
   servicesList: Array<IHomeService>;

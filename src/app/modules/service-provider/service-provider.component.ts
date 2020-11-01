@@ -1,9 +1,8 @@
 import { ActivatedRoute, Router } from '@angular/router';
-import { IServiceProvidersList } from './../../interfaces/IServiceProvidersList';
-import { IServiceProvider } from './../../interfaces/IServiceProviders';
 import { ServiceProviderService } from './../../services/service-provider.service';
+import { IServiceProvidersList } from './../../interfaces/IServiceProvidersList';
+import { IServiceProvider } from '../../interfaces/IServiceProvider';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-service-provider',

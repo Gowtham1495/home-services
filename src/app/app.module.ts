@@ -1,4 +1,4 @@
-import { ServiceProviderComponent } from './components/service-provider/service-provider.component';
+import { HomeServiceModule } from './modules/home-service/home-service.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -8,7 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { HsHeaderComponent } from './components/hs-header/hs-header.component';
 import { HsMaterialModule } from './material-module';
-import { HomeComponent } from './components/home/home.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HsFooterComponent } from './components/hs-footer/hs-footer.component';
 
@@ -17,17 +16,16 @@ import { HsFooterComponent } from './components/hs-footer/hs-footer.component';
   declarations: [
     AppComponent,
       HsHeaderComponent,
-      HomeComponent,
       SidenavComponent,
-      HsFooterComponent,
-      ServiceProviderComponent
+      HsFooterComponent
    ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HsMaterialModule
+    HsMaterialModule,
+    HomeServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

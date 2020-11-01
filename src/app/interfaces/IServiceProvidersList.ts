@@ -1,4 +1,4 @@
-import { IServiceProvider } from './IServiceProviders';
+import { IServiceProvider } from './IServiceProvider';
 
 export interface IServiceProvidersList {
     serviceProviders: Array<IServiceProvider>;

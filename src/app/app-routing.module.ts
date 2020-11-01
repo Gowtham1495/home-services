@@ -1,16 +1,14 @@
-import { ServiceProviderComponent } from './components/service-provider/service-provider.component';
-import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    loadChildren: () => import('./modules/home-service/home-service.module').then(m => m.HomeServiceModule)
   },
   {
     path: 'serviceProviders',
-    component: ServiceProviderComponent
+    loadChildren: () => import('./modules/service-provider/service-provider.module').then(m => m.ServiceProviderModule)
   },
   {
     path: '',
