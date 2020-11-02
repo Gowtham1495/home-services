@@ -1,3 +1,4 @@
+import { ReviewsService } from './../../services/reviews.service';
 import { HomeService } from './../../services/home.service';
 import { IHomeServiceList } from './../../interfaces/IHomeServiceList';
 import { IHomeService } from './../../interfaces/IHomeService';
@@ -24,11 +25,12 @@ export class ReviewsComponent implements OnInit {
 
   submittedMessage = '';
 
-  onSubmit(): void {
-    
-  }
 
-  constructor(private homeService: HomeService, private serviceProvidersService: ServiceProviderService) { }
+
+  constructor(
+    private homeService: HomeService,
+    private serviceProvidersService: ServiceProviderService,
+    private reviewsService: ReviewsService) { }
 
   ngOnInit(): void {
     this.serviceProvidersService.getServiceProviders().subscribe(resp => {
@@ -54,5 +56,12 @@ export class ReviewsComponent implements OnInit {
       }
       console.log('this.servicesList', this.servicesList);
     });
+  }
+
+  onSubmit(): void {
+    const reviewId = this.reviewsService.submitreview(this.model);
+    if (reviewId !== null) {
+      console.log('submitted successfully');
+    }
   }
 }

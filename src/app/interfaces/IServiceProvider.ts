@@ -8,6 +8,6 @@ export interface IServiceProvider {
     rating: string;
     serviceProviderCost: string;
     serviceProviderExp: string;
-    serviceProviderID: number;
+    serviceProviderId: number;
     serviceProviderName: string;
 }

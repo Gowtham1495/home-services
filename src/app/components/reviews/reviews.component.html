@@ -7,9 +7,11 @@
     </div>
     <div class="form-group">
       <label for="reviewFor">Review For</label>
-      <select class="form-control" id="serviceProviderId" name="serviceProviderId" required [(ngModel)]="model.serviceProviderId">
+      <select class="form-control" id="serviceProviderId" name="serviceProviderId" required
+        [(ngModel)]="model.serviceProviderId">
 
-        <option *ngFor="let serviceProvider of serviceProviders" [value]="serviceProvider">{{serviceProvider.serviceProviderName}}</option>
+        <option *ngFor="let serviceProvider of serviceProviders" [value]="serviceProvider.serviceProviderId">
+          {{serviceProvider.serviceProviderName}}</option>
 
       </select>
     </div>
@@ -17,14 +19,14 @@
       <label for="reviewFor">Review For Service</label>
       <select class="form-control" id="serviceId" name="serviceId" required [(ngModel)]="model.serviceId">
 
-        <option *ngFor="let service of servicesList" [value]="service">{{service.serviceName}}</option>
+        <option *ngFor="let service of servicesList" [value]="service.serviceId">{{service.serviceName}}</option>
 
       </select>
     </div>
     <div class="form-group">
       <label for="reviewContent">Review</label>
-      <textarea class="form-control textarea resize-ta" id="reviewContent" required
-      [(ngModel)]="model.reviewContent" #reviewContent="ngModel"></textarea>
+      <textarea name="reviewContent" class="form-control textarea resize-ta" id="reviewContent" required [(ngModel)]="model.reviewContent"
+        #reviewContent="ngModel"></textarea>
     </div>
     <br>
     <div class="form-group">
