@@ -11,6 +11,7 @@ import { IHomeService } from '../../interfaces/IHomeService';
 })
 export class HomeServiceComponent implements OnInit {
 
+  searchValue: string;
   homeServices: IHomeServiceList;
   servicesList: Array<IHomeService>;
   headers: Map<string, string>;

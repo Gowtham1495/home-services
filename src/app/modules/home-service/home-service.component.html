@@ -1,14 +1,22 @@
 <div class="jumbotron">
-  <div class="container text-center">
-    <form class="form-inline">
-      <input type="email" class="form-control" size="50" placeholder="Search for services...">
+  <div class="container text-center form-inline">
+    <div class="form-group form-inline">
+      <input name="searchServices" 
+      id="searchServices" 
+      type="email" 
+      class="form-control" 
+      size="50" 
+      placeholder="Search for services..."
+      #searchServices="ngModel"
+      [(ngModel)]="searchValue"
+      #ServiceFilter>
       <button type="button" class="btn btn-danger">Search</button>
-    </form>
+    </div>
   </div>
 </div>
 <div class="container">
   <div class="row">
-      <div class="col-sm-2" *ngFor="let service of servicesList">
+      <div class="col-sm-2" *ngFor="let service of servicesList | ServiceFilter: searchValue">
         <div class="panel panel-primary">
           <div class="panel-heading">{{service.serviceName}}</div>
           <div class="panel-body"><img src="{{service.image}}" class="img-responsive" style="width:100%" alt="Image">

@@ -12,6 +12,7 @@ import { HsMaterialModule } from './material-module';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HsFooterComponent } from './components/hs-footer/hs-footer.component';
 import { FormsModule } from '@angular/forms';
+import { SearchPipe } from './pipes/search.pipe';
 
 
 @NgModule({
