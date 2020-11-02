@@ -1,3 +1,4 @@
+import { ReviewsComponent } from './components/reviews/reviews.component';
 import { HomeServiceModule } from './modules/home-service/home-service.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,6 +11,7 @@ import { HsHeaderComponent } from './components/hs-header/hs-header.component';
 import { HsMaterialModule } from './material-module';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { HsFooterComponent } from './components/hs-footer/hs-footer.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,11 +19,13 @@ import { HsFooterComponent } from './components/hs-footer/hs-footer.component';
     AppComponent,
       HsHeaderComponent,
       SidenavComponent,
-      HsFooterComponent
+      HsFooterComponent,
+      ReviewsComponent
    ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HsMaterialModule,

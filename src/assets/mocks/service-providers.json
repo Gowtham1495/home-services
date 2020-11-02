@@ -10,7 +10,7 @@
                 "rating": "4.3",
                 "serviceProviderCost": "100/hour",
                 "serviceProviderExp": "1 years",
-                "serviceProviderID": 277,
+                "serviceProviderId": 277,
                 "serviceProviderName": "Williamson"
             },
             {
@@ -23,7 +23,7 @@
                 "rating": "0.0",
                 "serviceProviderCost": "Cleaning ₹1500\nService ₹2000",
                 "serviceProviderExp": "2 years",
-                "serviceProviderID": 317,
+                "serviceProviderId": 317,
                 "serviceProviderName": "Ayushman"
             },
             {
@@ -36,7 +36,7 @@
                 "rating": "0.0",
                 "serviceProviderCost": "Cleaning ₹1500\nService ₹2000",
                 "serviceProviderExp": "2 years",
-                "serviceProviderID": 317,
+                "serviceProviderId": 317,
                 "serviceProviderName": "Chadwick"
             }
         ]
